@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="calc-display">
+            <p id="display">0</p>
+        </div>
+        <div class="calc-keyboard" id="calc-keyboard">
+            <div onclick="clearDisplay()" class="not-blocked">C</div>
+            <div onclick="addDigit('-')" class="not-blocked">&#177;</div>
+            <div onclick="calculate('%')" class="not-blocked">%</div>
+            <div onclick="calculate(oper = '/')" class="not-blocked">&#247;</div>
+            <div onclick="addDigit('7')">7</div>
+            <div onclick="addDigit('8')">8</div>
+            <div onclick="addDigit('9')">9</div>
+            <div onclick="calculate(oper = '*')" class="not-blocked">&#215;</div>
+            <div onclick="addDigit('4')">4</div>
+            <div onclick="addDigit('5')">5</div>
+            <div onclick="addDigit('6')">6</div>
+            <div onclick="calculate(oper = '-')" class="not-blocked">-</div>
+            <div onclick="addDigit('1')">1</div>
+            <div onclick="addDigit('2')">2</div>
+            <div onclick="addDigit('3')">3</div>
+            <div onclick="calculate(oper = '+')" class="not-blocked">+</div>
+            <div onclick="addDigit('0')">0</div>
+            <div onclick="addDigit('.')">,</div>
+            <div onclick="calculate(oper = '=')" class="not-blocked">=</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

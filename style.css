@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calc {
+    border: 1px solid #000;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+}
+
+.calc-display {
+    border: 1px solid #000;
+
+    height: 70px;
+    background-color: hsl(0deg 3% 68%);
+}
+
+.calc-display p {
+    text-align: right;
+    font-size: 64px;
+    margin: 0 5px 0 0;
+    color: #fff;
+
+    letter-spacing: -6px;
+}
+
+.calc-keyboard {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.calc-keyboard div {
+    border: #000 1px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 5px;
+
+    font-size: 36px;
+    cursor: pointer;
+    background-color: hsl(300deg 3% 88%);
+}
+
+.calc-keyboard div:first-child, 
+.calc-keyboard div:nth-child(2),
+.calc-keyboard div:nth-child(3) {
+    background-color: hsl(300deg 3% 88%);
+}
+
+.calc-keyboard div:hover {
+    background-color: #ff8b40;
+}
+
+.calc-keyboard .not-blocked {
+    background-color: hsl(30deg 91% 58%);
+}
+
+.calc-keyboard .not-blocked:hover {
+    background-color: #bf6830;
+}
+
+.calc-keyboard div:nth-child(17) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.calc-keyboard .blocked {
+    background-color: rgb(94, 87, 87);
+}
+
+.calc-keyboard .blocked:hover {
+    background-color: rgb(94, 87, 87);
+}
